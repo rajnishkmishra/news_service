@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "ba1d0e74-44e2-4834-9d70-d6ead61763da",
+		"name": "NewsService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17858592"
+	},
+	"item": [
+		{
+			"name": "Get news by category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/news/catorgory/sports?p=1&l=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"news",
+						"catorgory",
+						"sports"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "1"
+						},
+						{
+							"key": "l",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get news by score",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/news/score/0.4?p=1&l=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"news",
+						"score",
+						"0.4"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "1"
+						},
+						{
+							"key": "l",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get news by source",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/news/source/ANI News?p=2&l=20",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"news",
+						"source",
+						"ANI News"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "2"
+						},
+						{
+							"key": "l",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get news by location",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/news/nearby?lat=17.900636&long=77.465262&radius=10&p=1&l=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"news",
+						"nearby"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "17.900636"
+						},
+						{
+							"key": "long",
+							"value": "77.465262"
+						},
+						{
+							"key": "radius",
+							"value": "10"
+						},
+						{
+							"key": "p",
+							"value": "1"
+						},
+						{
+							"key": "l",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get news by query",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/news/search?q=news from News18&p=1&l=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"news",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "news from News18"
+						},
+						{
+							"key": "p",
+							"value": "1"
+						},
+						{
+							"key": "l",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get trending news by location",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/trending?lat=18.069141&long=76.621249",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"trending"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "18.069141"
+						},
+						{
+							"key": "long",
+							"value": "76.621249"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
