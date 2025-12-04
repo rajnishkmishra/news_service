@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	GEMINI_API_KEY = "AIzaSyAP7wLC_aRaKIfys7nIWPZ_0tqKu88MaFs" //"GEMINI_API_KEY" //Put Gemini API key here
+	GEMINI_API_KEY = "GEMINI_API_KEY" //Put Gemini API key here
 )
 
 type LlmService struct{}
